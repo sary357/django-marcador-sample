@@ -1,0 +1,307 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"date",
+				"date_updated"
+			],
+			[
+				"p",
+				"python_2_unicode_compatible"
+			],
+			[
+				"verb",
+				"verbose_name_plural"
+			],
+			[
+				"MIDDLE",
+				"MIDDLEWARE"
+			],
+			[
+				"as",
+				"as_view"
+			],
+			[
+				"o",
+				"oauth2_views"
+			],
+			[
+				"con",
+				"conf"
+			],
+			[
+				"Bookm",
+				"Bookmark\tclass"
+			],
+			[
+				"u",
+				"user"
+			],
+			[
+				"get",
+				"get_object_or_404\timport"
+			],
+			[
+				"Bokk",
+				"BookmarkAdmin\tclass"
+			],
+			[
+				"da",
+				"date_updated\tstatement"
+			],
+			[
+				"re",
+				"return\tkeyword"
+			],
+			[
+				"T",
+				"True\tinstance"
+			],
+			[
+				"max",
+				"max_length"
+			],
+			[
+				"d",
+				"db"
+			],
+			[
+				"t",
+				"title\tstatement"
+			],
+			[
+				"pu",
+				"published_date\tstatement"
+			],
+			[
+				"U",
+				"User"
+			],
+			[
+				"a",
+				"abort\tfunction"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"last_filter": "Package Control: insta",
+		"selected_items":
+		[
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: int",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 188.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/sary357/Documents/fubon/djangoSample2/mysite/mysite",
+		"/Users/sary357/Documents/fubon/djangoSample2/mysite/myapp"
+	],
+	"file_history":
+	[
+		"/Users/sary357/Documents/fubon/oauth2/samplesite/simple_api_provider/urls.py",
+		"/Users/sary357/Documents/fubon/oauth2/samplesite/simple_api_provider/views.py",
+		"/Users/sary357/Documents/fubon/oauth2/samplesite/samplesite/settings.py",
+		"/Users/sary357/Documents/fubon/oauth2/samplesite/samplesite/urls.py",
+		"/Users/sary357/Documents/fubon/djangoSample/easysite/easysite/urls.py",
+		"/Users/sary357/Documents/fubon/djangoSample/easysite/easyapp/urls.py",
+		"/Users/sary357/Documents/fubon/djangoSample/easysite/easyapp/models.py",
+		"/Users/sary357/Documents/fubon/djangoSample2/mysite/myapp/views.py",
+		"/Users/sary357/Documents/fubon/djangoSample2/mysite/mysite/urls.py",
+		"/Users/sary357/Documents/fubon/djangoSample/easysite/easyapp/views.py",
+		"/Users/sary357/Documents/fubon/oauth2/samplesite/simple_api_provider/models.py",
+		"/Users/sary357/Documents/fubon/djangoSample/easysite/easyapp/admin.py",
+		"/Users/sary357/Documents/fubon/djangoSample/easysite/easyapp/templates/easyapp/bookmark_user.html",
+		"/Users/sary357/Documents/fubon/djangoSample/easysite/templates/base.html",
+		"/Users/sary357/Documents/fubon/djangoSample/easysite/easyapp/templates/easyapp/bookmark_list.html",
+		"/Users/sary357/Documents/fubon/djangoSample/easysite/easyapp/templates/easyapp/bookmark.html",
+		"/Users/sary357/Documents/fubon/djangoSample/easysite/easysite/settings.py",
+		"/Users/sary357/Documents/fubon/djangoSample/easysite/blog/models.py",
+		"/Users/sary357/Documents/fubon/djangoSample/easysite/easysite/easysite.sublime-project",
+		"/Users/sary357/test.py",
+		"/usr/local/Cellar/python3/3.6.0/Frameworks/Python.framework/Versions/3.6/lib/python3.6/pydoc.py"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"MIDDLEWARE",
+			"AUTHENTICATION_BACKENDS",
+			"plugin",
+			"nn"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python 3/Python3.sublime-build",
+	"project": "sample.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
