@@ -15,9 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-
-
+from django.core.urlresolvers import reverse_lazy
+from django.contrib.auth.views import login
+from django.contrib.auth.views import logout
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('myapp.urls')),
+    url(r'^login/$', login, {'template_name':'login.html'}, name='mysite_login'),
+    url(r'^logout/$', logout, {'next_page': reverse_lazy('myapp_bookmark_list')}, name='mysite_logout')
 ]

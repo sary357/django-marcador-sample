@@ -1,8 +1,10 @@
 from django.shortcuts import get_object_or_404, redirect, render
 from django.contrib.auth.models import User
+from django.contrib.auth.decorators import login_required
+from django.core.exceptions import PermissionDenied
 
 from .models import Bookmark
-
+from .forms import BookmarkForm
 
 def bookmark_list(request):
 
@@ -20,3 +22,34 @@ def bookmark_user(request, username):
         bookmarks = Bookmark.public.filter(owner__username=username)
     context = {'bookmarks': bookmarks, 'owner': user}
     return render(request, 'myapp/bookmark_user.html', context)
+
+@login_required
+def bookmark_create(request):
+    if request.method == 'POST':
+        form=BookmarkForm(data=request.POST)
+        if form.is_valid():
+            bookmark=form.save(commit=False)
+            bookmark.owner=request.user
+            bookmark.save()
+            form.save_m2m()
+            return redirect('myapp_bookmark_user', username=request.user.username)
+
+    else:
+        form=BookmarkForm()
+    context={'form': form, 'create': True}
+    return render(request, 'myapp/form.html', context)
+
+@login_required
+def bookmark_edit(request):
+    bookmark=get_object_or_404(Bookmark, pk=pk)
+    if bookmark.owner!=request.user and not request.user.is_superuser:
+        raise PermissionDenied
+    if form.method=='POST':
+        form=BookmarkForm(instance=bookmark, data=request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('myapp_bookmark_user', username=request.user.username)
+    else:
+        form=BookmarkForm(instance=bookmark)
+        context={'form': form, 'create': False}
+        return render(request, 'myapp/form.html', context)
